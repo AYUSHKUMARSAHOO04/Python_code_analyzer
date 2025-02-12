@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Feedback</h1>
+    <ul>
+        {% for item in feedback %}
+            <li>
+                <strong>Line {{ item.line }}:</strong> {{ item.message }}<br>
+                <em>Suggestion:</em> {{ item.suggestion }}
+            </li>
+        {% endfor %}
+    </ul>
+    <a href="/" class="btn btn-secondary">Submit Another Code</a>
+{% endblock %}

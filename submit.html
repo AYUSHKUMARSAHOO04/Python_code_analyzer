@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Submit Your Python Code</h1>
+    <form action="/submit" method="post">
+        <div class="form-group">
+            <label for="code">Python Code:</label>
+            <textarea class="form-control" id="code" name="code" rows="10"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+{% endblock %}
